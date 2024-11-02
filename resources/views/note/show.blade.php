@@ -1,7 +1,7 @@
-<x-layout>
+<x-app-layout>
     <div class="note-container single-note">
         <div class="note-header">
-            <h1>NOTE: {{ $note->created_at }}</h1>
+            <h1 class="text-3x1 py-4">NOTE: {{ $note->created_at }}</h1>
 
             <div class="note-buttons">
                 <a href="{{ route('note.edit', $note) }}" class="note-edit-button">Edit</a>
@@ -21,4 +21,4 @@
             </div>
         </div>
     </div>
-</x-layout>
+</x-app-layout>
